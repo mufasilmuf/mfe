@@ -13,7 +13,7 @@ on:
       - "packages/container/**"
 
 # run the workflow for default container module.
-default:
+defaults:
   run:
     working-directory: packages/container
 
