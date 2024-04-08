@@ -1,14 +1,17 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 
 import MarketingApp from './components/marketingApp';
+import Header from './components/Header';
 
 const App = () => {
     return (
-        <React.Fragment>
-            <h1>Micro Frontend deploy</h1>
-            <hr />
-            <MarketingApp />
-        </React.Fragment>
+        <BrowserRouter>
+            <React.Fragment>
+                <Header />
+                <MarketingApp />
+            </React.Fragment>
+        </BrowserRouter>
     )
 }
 
